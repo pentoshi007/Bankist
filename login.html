@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login | Bankist</title>
+
+    <script defer src="login.js"></script>
+  </head>
+  <body>
+    <!-- LOGIN PAGE -->
+    <div id="login-page">
+      <nav class="login-nav">
+        <img src="img/logo.png" alt="Logo" class="nav__logo" />
+        <button class="nav__toggle login-nav__toggle" id="login-nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="login-nav__menu" id="login-nav-menu">
+          <button class="btn--back-to-landing" onclick="window.location.href='index.html'">← Back to Home</button>
+        </div>
+      </nav>
+      
+      <div class="login-container">
+        <h2>Welcome to <span class="highlight">Bankist</span></h2>
+        <p class="login-subtitle">Your minimalist banking experience</p>
+        
+        <form class="login-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              class="login__input login__input--user"
+              placeholder="Enter your username"
+              required
+            />
+          </div>
+          
+          <div class="form-group">
+            <label for="pin">PIN</label>
+            <input
+              type="password"
+              id="pin"
+              class="login__input login__input--pin"
+              placeholder="Enter your PIN"
+              maxlength="4"
+              required
+            />
+          </div>
+          
+          <button type="submit" class="btn login__btn">Sign In →</button>
+        </form>
+        
+        <p class="login-help">
+          Don't have an account? 
+          <a href="index.html#open-account" class="create-account-link">Create one now</a>
+        </p>
+        
+        <div class="demo-accounts">
+          <h4>Try Demo Accounts</h4>
+          <div class="demo-account">
+            <strong>Username:</strong> sj | <strong>PIN:</strong> 1111
+          </div>
+          <div class="demo-account">
+            <strong>Username:</strong> jd | <strong>PIN:</strong> 2222
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer login-footer">
+        <div class="footer__content">
+          <img src="img/icon.png" alt="Logo" class="footer__logo" />
+          <p class="footer__copyright">
+            Made by
+            <a
+              class="footer__link twitter-link"
+              target="_blank"
+              href="https://twitter.com/lunatic_ak_"
+              >Aniket Pandey</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
